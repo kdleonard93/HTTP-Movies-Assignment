@@ -28,7 +28,7 @@ return (
         name="title"
         value={movie.title}
         placeholder="Title"
-        onChan={handleChange}
+        onChange={handleChange}
       ></input>
       <input
         type="text"

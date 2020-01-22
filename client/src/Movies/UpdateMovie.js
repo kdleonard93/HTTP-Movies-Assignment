@@ -22,13 +22,13 @@ const UpdateMovie = () => {};
 
 return (
   <>
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         name="title"
         value={movie.title}
         placeholder="Title"
-        onChange={handleChange}
+        onChan={handleChange}
       ></input>
       <input
         type="text"

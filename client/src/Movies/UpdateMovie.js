@@ -8,21 +8,25 @@ const initialState = {
   stars: []
 };
 
-const [movie, setMovie] = useState(initialState);
+const UpdateMovie = props => {
+  const [movie, setMovie] = useState(initialState);
 
-const handleChange = e => {
-  setMovie({
-    ...movie,
-    [e.target.name]: [e.target.value]
-  });
-  console.log(movie);
-};
+  const handleChange = e => {
+    setMovie({
+      ...movie,
+      [e.target.name]: [e.target.value]
+    });
+    console.log(movie);
+  };
 
-const UpdateMovie = () => {};
+//   const handleSubmit = e => {
+//     // e.preventDefault(),
+//   };
+// };
 
 return (
   <>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={updateMovie}>
       <input
         type="text"
         name="title"
